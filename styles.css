@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "education-fonts";
+  src:url("fonts/education-fonts.eot");
+  src:url("fonts/education-fonts.eot?#iefix") format("embedded-opentype"),
+    url("fonts/education-fonts.woff") format("woff"),
+    url("fonts/education-fonts.ttf") format("truetype"),
+    url("fonts/education-fonts.svg#education-fonts") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ef {
+  display: inline-block;
+  font: normal normal normal 14px/1 education-fonts;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.ef-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.ef-2x {
+  font-size: 2em;
+}
+.ef-3x {
+  font-size: 3em;
+}
+.ef-4x {
+  font-size: 4em;
+}
+.ef-5x {
+  font-size: 5em;
+}
+.ef-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.ef-center {
+  vertical-align: middle;
+}
+
+[data-icon]:before {
+  font-family: "education-fonts" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ef-"]:before,
+[class*=" ef-"]:before {
+  font-family: "education-fonts" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ef-huol:before {
+  content: "\61";
+}
+.ef-ebserh:before {
+  content: "\62";
+}
+.ef-lais:before {
+  content: "\63";
+}
+.ef-ufrn:before {
+  content: "\64";
+}
