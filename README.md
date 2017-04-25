@@ -1,4 +1,4 @@
-# education-fonts
+# lais-fonts
 
 ### How to Install?
 
