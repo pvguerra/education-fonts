@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "lais-fonts";
+  src:url("fonts/lais-fonts.eot");
+  src:url("fonts/lais-fonts.eot?#iefix") format("embedded-opentype"),
+    url("fonts/lais-fonts.woff") format("woff"),
+    url("fonts/lais-fonts.ttf") format("truetype"),
+    url("fonts/lais-fonts.svg#lais-fonts") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.lf {
+  display: inline-block;
+  font: normal normal normal 14px/1 education-fonts;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.lf-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.lf-2x {
+  font-size: 2em;
+}
+.lf-3x {
+  font-size: 3em;
+}
+.lf-4x {
+  font-size: 4em;
+}
+.lf-5x {
+  font-size: 5em;
+}
+.lf-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.lf-center {
+  vertical-align: middle;
+}
+
+[data-icon]:before {
+  font-family: "lais-fonts" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="lf-"]:before,
+[class*=" lf-"]:before {
+  font-family: "lais-fonts" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lf-huol:before {
+  content: "\61";
+}
+.lf-ebserh:before {
+  content: "\62";
+}
+.lf-lais:before {
+  content: "\63";
+}
+.lf-ufrn:before {
+  content: "\64";
+}
